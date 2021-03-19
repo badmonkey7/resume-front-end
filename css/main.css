@@ -1,0 +1,591 @@
+body,ul,input{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+body{
+    position: relative;
+    font-family:"Microsoft Yahei";
+    /*width: 1920px;*/
+}
+body,html{
+    scroll-behavior: smooth
+}
+.btn a{
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+}
+#back{
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 3;
+}
+#back a{
+    width: 50px;
+    height: 50px;
+    background: url("../img/g.png");
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 3;
+}
+ul>li{
+    list-style: none;
+}
+#topHeader{
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    /*background: grey;*/
+    z-index: 2;
+    /*div 在背景的上层*/
+}
+
+#bottomHeader{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    top: -80px;
+    height: 80px;
+    background: #222222;
+}
+#bottomHeader .title span{
+    font-size: 26px;
+}
+#bottomHeader  .title span:nth-child(2){
+    color: #444444;
+}
+#bottomHeader  .pages a{
+    font-size: 14px;
+    color: #444444;
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background: #222222;
+}
+
+.title{
+    width: 300px;
+    height: 100%;
+    /*background: aqua;*/
+    position: absolute;
+    left: 200px;
+    /*left: 200px;*/
+    justify-content: space-around;
+}
+.title span:nth-child(1){
+    font-size: 30px;
+    line-height: 80px;
+    color: rgb(255,101,55);
+}
+.title span:nth-child(2){
+    font-size: 30px;
+    line-height: 80px;
+    color: #ffffff;
+}
+.pages{
+    /*相对定位到右上角*/
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    right: 200px;
+}
+.pages>ul{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 80px;
+}
+.pages a{
+    text-decoration: none;
+    color:#fff;
+}
+.footerInfo>ul{
+    font-size: 14px;
+    color: rgb(68,68,68);
+    display: flex;
+    justify-content: space-around;
+    line-height: 80px;
+}
+.swiper-container{
+    height: 960px;
+    width: 100%;
+    position: relative;
+    top:-80px;
+}
+.swiper-slide{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+/*第一个轮播div*/
+.swiper-wrapper .swiper-slide:first-child{
+    background: url("../img/back1.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 960px;
+    z-index: -1;
+}
+.swiper-wrapper .swiper-slide:first-child>div{
+
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    top: 300px;
+}
+
+/*第二个轮播div*/
+/*所有的标签都要定位到中心*/
+.swiper-wrapper .swiper-slide:nth-child(2){
+    background: url("../img/back2.jpg") no-repeat center;
+    height: 960px;
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+
+.swiper-wrapper .swiper-slide:nth-child(2) ul{
+    position: absolute;
+    /*定位使用的是左上角，translate 使用的是中心点*/
+    /*先定位到中间，然后使用translate移动中心点*/
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.swiper-wrapper .swiper-slide:nth-child(2) li{
+    text-align: center;
+    margin: 10px 0;
+}
+.swiper-wrapper .swiper-slide:nth-child(2) span{
+    font-size: 35px;
+    color: #ffffff;
+}
+
+/*swiper 更换图片*/
+
+
+
+
+#infoBox{
+    /*margin: 0 0;*/
+    width: 100%;
+    height: 1272px;
+    background: url("../img/girlBack.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    top: -80px;
+}
+
+#infoBox>div:first-child{
+    position: relative;
+    top: 80px;
+}
+/*个人信息css*/
+#infoBox>div:first-child>div{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    /*position: relative;*/
+    /*margin: 80px auto 0;*/
+}
+
+
+#infoBox #rightInfo{
+    height: 847px;
+    width: 618px;
+    background: url("../img/girl.webp") no-repeat center;
+    background-size: cover;
+    z-index: 2;
+}
+#infoBox #leftInfo{
+    height: 847px;
+    width: 468px;
+    /*background: #882525;*/
+    position: relative;
+    top: -847px;
+    left: 650px;
+    /*background: url("../img/girl.webp") no-repeat;*/
+    z-index: 2;
+}
+
+#infoBox #leftInfo div:first-child{
+    height: 260px;
+    width: 468px;
+    background: url("../img/girlLeftBack.png") no-repeat center;
+    background-size: cover;
+    margin: 0 auto 50px;
+}
+#infoBox #leftInfo div:first-child img{
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /*background: url("../img/playBtn.jpeg");*/
+}
+/*Mrs.Chen*/
+#infoBox #leftInfo div:nth-child(2) span{
+    font-size: 24px;
+    color: #ffffff;
+}
+/*--*/
+#infoBox #leftInfo div:nth-child(3) span{
+    font-size: 24px;
+    color:rgb(255, 101, 55);
+}
+#infoBox #leftInfo div:nth-child(3) {
+    margin: 0 auto 30px;
+}
+/*我的简介*/
+#infoBox #leftInfo div:nth-last-child(2) span:nth-child(1){
+    color: #ffffff;
+    font-size: 16px;
+}
+/*对待工作*/
+#infoBox #leftInfo div:nth-last-child(2) span:last-child{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 2em;
+}
+#infoBox #leftInfo div:nth-last-child(2) {
+    margin: 10px auto 50px;
+}
+/*MORE按钮*/
+#infoBox #leftInfo div:last-child{
+    height: 46px;
+    width: 162px;
+    background: rgb(255, 172, 0);
+    position: relative;
+    border-radius:23px;
+}
+
+#infoBox #leftInfo a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+#infoBox .box {
+    height: 430px;
+    width: 1077px;
+    /*background: black;*/
+    /*background: url("../img/girlInfoBottom.webp") no-repeat;*/
+    z-index: 2;
+    position: relative;
+    top: -1100px;
+    /*left: -500px;*/
+}
+
+
+#infoBox #skills>div:first-child{
+    height: 100px;
+    width: 1030px;
+    /*background: black;*/
+    position: relative;
+    top: -1200px;
+    z-index: auto;
+    margin: 0 auto;
+}
+
+#infoBox #skills .smallLogo{
+    height: 100px;
+    width: 100%;
+}
+
+#infoBox #skills ul{
+    display: flex;
+    justify-content: space-around;
+    /*align-items: flex-end;*/
+}
+#infoBox #skills ul .smallLogo p{
+    text-align: center;
+    color: #cecece;
+    font-size: 14px;
+}
+
+#workBox{
+    width: 100%;
+    height: 726px;
+    background: url("../img/workBack1.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    top: -80px;
+}
+
+#workBox #workInfo{
+    width: 80%;
+    height: 90%;
+    /*background: #7da8cc;*/
+    margin: 0 auto;
+}
+
+#workBox #workInfo>div{
+    width: 500px;
+    height: 180px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#workBox #workInfo>div div:nth-child(1) span{
+    font-size: 24px;
+    color: #ffffff;
+}
+
+#workBox #workInfo>div div:nth-child(2) span{
+    font-size: 24px;
+    color: #ff6537;
+}
+#workBox #workInfo>div div:nth-child(3) span{
+    font-size: 14px;
+    color: #c4c4c4;
+}
+#workBox #workInfo>div[id="workDisplay"]{
+    height: 400px;
+    width:1200px;
+    /*background: black;*/
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+}
+#workBox #workInfo>div[id="workDisplay"] ul img{
+    width: 300px;
+    height: 365px;
+    transition: all .4s;
+}
+#workBox #workInfo>div[id="workDisplay"] ul img:hover{
+        transform: scale(1.1);
+}
+#workBox #workInfo>div[id="workDisplay"] ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+#workBox #workInfo>div[id="workDisplay"] p{
+    font-size: 14px;
+    color: #ffffff;
+}
+#workBox #workInfo>div[id="workButton"]{
+    width: 180px;
+    height: 60px;
+    margin: 0 auto;
+    /*background: black;*/
+}
+#workBox #workInfo>div[id="workButton"]>div{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: rgb(255, 172, 0);
+    text-align: center;
+    position: relative;
+}
+#workBox #workInfo>div[id="workButton"]>div a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+}
+#chatBox{
+    width: 100%;
+    height: 614px;
+    /*background: black;*/
+    background: url("../img/chat.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    top: -80px;
+}
+
+#chatBox #chatWrapper{
+    width: 100%;
+    height: 90%;
+    margin: 0 auto;
+    /*background: #7da8cc;*/
+}
+#chatBox #chatWrapper>div{
+    /*background: #882525;*/
+    width: 1030px;
+    /*margin: 0 190px;*/
+}
+
+#chatBox #chatWrapper>div:first-child{
+    height: 100px;
+
+    /*background: #882525;*/
+    /*margin: 0 190px;*/
+}
+
+#chatBox #chatWrapper>div:first-child div{
+    margin-bottom: 20px;
+}
+#chatBox #chatWrapper>div:first-child>div:nth-child(1) span{
+    font-size: 24px;
+    color: #ffffff;
+}
+#chatBox #chatWrapper>div:first-child>div:nth-child(2) span{
+    font-size: 24px;
+    color: #ff6537;
+}
+#chatBox #chatWrapper>div:first-child>div:nth-child(3) span{
+    font-size: 14px;
+    color: #c4c4c4;
+}
+#chatBox #chatWrapper>div:first-child>div:nth-child(4) span{
+    font-size: 14px;
+    color: #c4c4c4;
+}
+#chatBox #inputWrapper {
+    height: 100px;
+    /*background: #c4c4c4;*/
+    position: relative;
+    top: 100px;
+}
+#chatBox #inputWrapper ul{
+    display: flex;
+    justify-content:space-between;
+}
+#chatBox #inputWrapper ul input{
+    height: 36px;
+    width: 260px;
+    background: #e7e7e7;
+    border-radius: 3px;
+}
+
+#chatBox #textWrapper{
+    width: 1030px;
+    height: 120px;
+    /*background: #e7e7e7;*/
+    position: relative;
+    top: 120px;
+}
+#chatBox #textWrapper input{
+    top: -5px;
+    width: 100%;
+    height: 100px;
+    background: #e7e7e7;
+    border-radius: 10px;
+}
+
+#chatBox p{
+    font-size: 14px;
+    color: #ffffff;
+}
+#chatBox #contactBtn{
+    position: relative;
+    top: 180px;
+}
+#chatBox #contactBtn>div{
+    background: #ffad2b;
+    width: 240px;
+    height: 44px;
+}
+
+#chatBox #contactBtn .btn>div{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.personBox{
+    width: 100%;
+    height: 938px;
+    background: url("../img/workBack2.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    /*top: -80px;*/
+    margin: 0;
+}
+.personBox #personInfo{
+    margin: 0 20%;
+}
+
+.personBox #personInfo{
+    position: relative;
+    top: 0;
+}
+.personBox #personInfo #workEx{
+    position: absolute;
+    top: 0;
+}
+.personBox #personInfo #studyEx{
+    position: relative;
+    top: 240px;
+}
+#expTitle{
+    /*background: black;*/
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    /*left: 90px;*/
+}
+#expTitle div{
+    text-align: center;
+    margin: 20px auto;
+}
+#expTitle div:nth-child(1)>span{
+    font-size: 24px;
+    color: #ffffff;
+}
+
+#expTitle div:nth-child(2)>span{
+    font-size: 24px;
+    color: rgb(255, 101, 55);
+}
+#expTitle div:nth-child(3)>span{
+    font-size: 14px;
+    color: #c4c4c4;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 1030px;
+}
+
+
+#videoBox{
+    opacity: 0;
+    width: 100%;
+    height: 560px;
+    position: fixed;
+    top: 250px;
+    z-index: 3;
+    /*background: black;*/
+}
+#videoBox .wrapper{
+    height: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    background: url("../img/bigBack.png") no-repeat;
+    background-size: cover;
+    /*background: #ffffff;*/
+}
+#videoBox .wrapper img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.back{
+    opacity: 1;
+}
+
+

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/information.css">
+    <script src="js/swiper.min.js"></script>
+    <title>个人简历模板</title>
+</head>
+<body>
+    <div id="back" class="btn" >
+        <a href="#topHeader"></a>
+    </div >
+    <div id="topHeader" class="back">
+            <div class="title">
+                <span>个人简历</span>
+                <span>模板</span>
+            </div>
+            <div class="pages">
+                <ul>
+                    <li><a href="index.html" style="color: #ff6537">首页</a></li>
+                    <li><a href="information.html">个人信息</a></li>
+                    <li><a href="work.html">个人作品</a></li>
+                </ul>
+            </div>
+    </div>
+    <div class="swiper-container back">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div>
+                    <div>
+                        <img src="img/swiper1.webp" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <ul>
+                    <li><img src="img/resume.webp" alt=""></li>
+                    <li><img src="img/dots.webp" alt=""></li>
+                    <li>
+                            <span>
+                            你好，这是我的个人简历
+                            </span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: true,//可选选项，自动滑动
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    </script>
+    <div id="infoBox" class="back">
+            <div>
+                <div class="contentWithAnimation">
+                    <div class="wrapper">
+                        <div id="rightInfo">
+                        </div>
+                        <div id="leftInfo" >
+                            <div>
+                                <img src="img/playBtn.png" alt="" onclick="playVideo()">
+                                <!--                            <video src="media/demo.mp4" controls width="468" poster="../img/girlLeftBack.png"></video>-->
+                            </div>
+                            <div><span>Mrs.Chen</span></div>
+                            <div><span>——</span></div>
+                            <div>
+                                <span>我的简介:</span>
+                                <br>
+                                <span>对待工作认真负责，善于沟通、协调有较强的组织能力与团队精神，活泼开朗、乐观上进有爱心并善于施教并行</span>
+                            </div>
+                            <div><a href="information.html">MORE</a></div>
+                        </div>
+                        <div class="box">
+                            <div id="info">
+                                <div class="contentWithAnimation">
+                                    <div class="text" style="display: inline-block; line-height: 40px;">
+                                        <li>姓名：蒋小姐</li>
+                                        <li> 毕业学院：北京XXXXX大学</li>
+                                        <li>学历：硕士</li>
+                                    </div>
+
+                                    <div class="text" style="display: inline-block;line-height: 40px;margin-left: 40px;">
+                                        <li>出生年月：19XX年XX月XX日</li>
+                                        <li>学习专业：视觉传达专业</li>
+                                        <li>现住地：广州</li>
+                                    </div>
+                                    <div style="display: inline-block; width: 2px; height: 100px;margin:auto 30px;background: #EDEAE0;">
+
+                                    </div>
+
+                                    <div style="display: inline-block;">
+                                        <p style="text-align: center;"><img src="img/qq.png" /></p>
+                                        <p class="text">258506508</p>
+                                    </div>
+
+                                    <div style="display: inline-block; margin-left: 30px;">
+                                        <p style="text-align: center;"><img src="img/tel.png" /></p>
+                                        <p class="text">13800000000</p>
+                                    </div>
+                                    <div style="display: inline-block; margin-left: 30px;">
+                                        <p style="text-align: center;"><img src="img/mob.png" /></p>
+                                        <p class="text">xxx@.co.m</p>
+                                    </div>
+                                    <div style="display: inline-block; margin-left: 30px;">
+                                        <p style="text-align: center;"><img src="img/tel.png" /></p>
+                                        <p class="text">020-000000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="skills" class="contentWithAnimation">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div class="smallLogo">
+                                            <div>
+                                                <img src="img/ps.webp" alt="">
+                                            </div>
+                                            <p>熟练度:80%</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div  class="smallLogo">
+                                            <div>
+                                                <img src="img/ai.webp" alt="">
+                                            </div>
+                                            <p>熟练度:80%</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div  class="smallLogo">
+                                            <div>
+                                                <img src="img/xd.webp" alt="">
+                                            </div>
+                                            <p>熟练度:80%</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div  class="smallLogo">
+                                            <div>
+                                                <img src="img/ae.webp" alt="">
+                                            </div>
+                                            <p>熟练度:80%</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+    </div>
+    <div id="videoBox">
+        <div class="wrapper">
+            <img src="img/playBtn.png" alt="" onclick="closeVideo()">
+        </div>
+    </div>
+    <script>
+        function playVideo(){
+            var back = document.getElementsByClassName("back");
+            for(var i=0;i<back.length;i++){
+                back[i].style.opacity=0.5;
+            }
+            document.getElementById("videoBox").style.opacity=1;
+        }
+        function closeVideo(){
+            var back = document.getElementsByClassName("back");
+            for(var i=0;i<back.length;i++){
+                back[i].style.opacity=1;
+            }
+            document.getElementById("videoBox").style.opacity=0;
+        }
+    </script>
+    <div id="workBox" class="back">
+            <div id="workInfo">
+                <div>
+                    <div><span>优秀个人作品</span></div>
+                    <div><span>——</span></div>
+                    <div><span>给我一个学习和锻炼的平台，我会好好把握</span></div>
+                </div>
+                <div id="workDisplay">
+                    <ul>
+                        <li>
+                            <img src="img/1.webp" alt="">
+                            <p>XXXX金融公司VI效果图</p>
+                        </li>
+                        <li>
+                            <img src="img/2.webp" alt="">
+                            <p>XXXX金融公司VI效果图</p>
+                        </li>
+                        <li>
+                            <img src="img/3.webp" alt="">
+                            <p>XXXX金融公司VI效果图</p>
+                        </li>
+                        <li>
+                            <img src="img/4.webp" alt="">
+                            <p>XXXX金融公司VI效果图</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="workButton">
+                    <div><a href="work.html">MORE</a></div>
+                </div>
+            </div>
+    </div>
+
+    <div class="personBox back">
+        <div id="personInfo">
+            <div class="wrapper">
+                <div id="studyEx">
+                    <div class="contentWithAnimation">
+                        <p style="font-size: 25px;color: #444444;">求学经历</p>
+                        <div style="height: 2px; width: 430px;background: #DDDCD7;"></div>
+                        <p class="text" style="font-size: 16px;display: inline-block;">北京XXX大学</p>
+                        <p class="text" style="font-size: 16px;display: inline-block;float: right;">2008-2011</p>
+                        <p class="text" style="line-height: 1.3;">视觉传达专业，在大学期间顺利完成专业英语四级、视觉传达设计师中级证书资格</p>
+                        <p class="text" style="line-height: 0.5;"><br /></p>
+
+
+                        <div style="height: 2px; width: 430px;background: #DDDCD7;"></div>
+                        <p class="text" style="font-size: 16px;display: inline-block;">美国XXX大学</p>
+                        <p class="text" style="font-size: 16px;display: inline-block;float: right;">2011-2013</p>
+                        <p class="text" style="line-height: 1.3;">UI/XR交互专业，在大学期间顺利国家奖学金一级、所有专业技能均达到优秀成绩毕业</p>
+                        <p class="text" style="line-height: 0.5;"><br /></p>
+
+
+                        <div style="height: 2px; width: 430px;background: #DDDCD7;"></div>
+                        <p class="text" style="font-size: 16px;display: inline-block;">英国XXX大学</p>
+                        <p class="text" style="font-size: 16px;display: inline-block;float: right;">2014-2016</p>
+                        <p class="text" style="line-height: 1.3;">交互专业，视觉传播专业，在进修时间所有专业技能均达到优秀成绩毕业</p>
+                        <p class="text" style="line-height: 0.5;"><br /></p>
+                    </div>
+                </div>
+
+                <div id="workEx">
+                    <div class="contentWithAnimation">
+
+
+                        <p style="font-size: 25px;color: #444444;">工作经验</p>
+                        <div style="height: 2px; width: 430px;background: #DDDCD7;"></div>
+                        <p class="text" style="font-size: 16px;display: inline-block;">XXXXX品牌游戏公司</p>
+                        <p class="text" style="font-size: 16px;display: inline-block;float: right;">平面设计师</p>
+                        <p class="text" style="line-height: 1.3;">结合实际需求，负责完成游戏产品的市场推广素材</p>
+                        <p class="text" style="line-height: 0.40;"><br /></p>
+                        <p class="text" style="line-height: 0.5;"><br /></p>
+
+
+                        <div style="height: 2px; width: 430px;background: #DDDCD7;"></div>
+                        <p class="text" style="font-size: 16px;display: inline-block;">XXXXX品牌游戏公司</p>
+                        <p class="text" style="font-size: 16px;display: inline-block;float: right;">平面设计师</p>
+                        <p class="text" style="line-height: 1.3;">视觉传达专业，在大学期间顺利完成专业英语四级、视觉传达设计师中级证书资格</p>
+                        <p class="text" style="line-height: 0.5;"><br /></p>
+
+
+                        <div style="height: 2px; width: 430px;background: #DDDCD7;"></div>
+                        <p class="text" style="font-size: 16px;display: inline-block;">XXXXX品牌游戏公司</p>
+                        <p class="text" style="font-size: 16px;display: inline-block;float: right;">交互设计师</p>
+                        <p class="text" style="line-height: 1.3;">对产品进行行为设计和界面设计。 行为设计是指各种用户操作后的效果设计</p>
+                        <p class="text" style="line-height: 0.5;"><br /></p>
+                    </div>
+                </div>
+                <div id="expTitle">
+                    <div>
+                        <span>基本个人资料</span>
+                    </div>
+                    <div>
+                        <span>——</span>
+                    </div>
+                    <div>
+                            <span>
+                                给我一个学习和锻炼的平台，我会好好把握
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="chatBox" class="contentWithAnimation back">
+        <div class="wrapper">
+            <div id="chatWrapper">
+                <div>
+                    <div><span>欢迎更多小伙伴与我交流</span></div>
+                    <div><span>——</span></div>
+                    <div><span>给我一个学习和锻炼的平台，我会好好把握</span></div>
+                    <div><span>多年工作经验，从传统广告到互联网，从视觉到UI交互，让我收获足够的经验，磨练出独特的审美以及与众不同的视野！</span></div>
+                </div>
+                <div id="inputWrapper">
+                    <ul>
+                        <li><p>姓名:</p><input type="text"><span style="color:red;margin-left: 10px">  *</span></li>
+                        <li><p>电话:</p><input type="text"><span style="color:red;margin-left: 10px">  *</span></li>
+                        <li><p>邮箱:</p><input type="text"><span style="color:red;margin-left: 10px">  *</span></li>
+                    </ul>
+                </div>
+                <div id="textWrapper">
+                    <p>交流分享:</p>
+                    <input type="text">
+                </div>
+                <div id="contactBtn">
+                    <!--                2-->
+                    <div class="btn">
+                        <div>
+                            <a href="">联系我</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottomHeader" class="back">
+            <div class="title">
+                <span>个人简历</span>
+                <span>模板</span>
+            </div>
+            <div class="pages">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="information.html">个人信息</a></li>
+                    <li><a href="work.html">个人作品</a></li>
+                </ul>
+            </div>
+    </div>
+    <div id="footer" class="back">
+        <div class="footerInfo">
+            <ul>
+                <li><span>QQ:xxxxxx</span></li>
+                <li><span>联系电话:xxxxxx</span></li>
+                <li><span>联系邮箱:xxxxxx</span></li>
+                <li><span>联系地址:xxxxxx</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

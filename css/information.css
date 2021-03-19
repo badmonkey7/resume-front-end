@@ -1,0 +1,117 @@
+.transform {
+	-webkit-backface-visibility:hidden;
+}
+body,
+ul {
+	margin: 0;
+	padding: 0;
+	/*background-image: url(../img/background.jpg);*/
+}
+body{
+	background:#4432c4;
+}
+#test {
+	width: 1000px;
+	background-color: red;
+}
+
+.box {
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: 1030px;
+	/*background-color: red;*/
+}
+
+#introPhoto {
+	position: relative;
+	width: 400px;
+	height: 200px;
+	left: 500px;
+	animation: righteaseinAnimate 2s ease 1;
+}
+
+#introWord {
+	position: absolute;
+	width: 750px;
+	height: auto;
+	background-color: #FEF8E4;
+	border-radius: 10px;
+	margin-top: 30px;
+	/*padding: 30px 50px;*/
+	padding: 30px 0px 30px 50px;
+}
+#word{
+	animation: righteaseinAnimate 2s ease 1;
+
+}
+#personone {
+	/*margin-top: 166px;*/
+	text-align: center;
+	animation: righteaseinAnimate 2s ;
+}
+
+#info {
+	width: 980px;
+	/*height: 190px;*/
+	height: auto;
+	background-color: #FEF8E4;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70px;
+	padding: 30px 0px 30px 50px;
+
+}
+.contentWithAnimation
+{
+	animation: righteaseinAnimate 2s;
+}
+
+#studyEx {
+	width: 390px;
+	height: 570px;
+	background-color: #FEF8E4;
+	border-radius: 10px;
+	/*margin-left: 0;
+	margin-right: auto;*/
+	/*float: left;*/
+	display: inline-block;
+	padding-left: 40px;
+	padding-right: 50px;
+
+}
+
+#workEx {
+	width: 390px;
+	height: 570px;
+	background-color: #FEF8E4;
+	border-radius: 10px;
+	/*float: right;*/
+	display: inline-block;
+	margin-left: 64.5px;
+	padding-left: 40px;
+	padding-right: 50px;
+
+}
+
+.text {
+	font-size: 14px;
+	color: #777777;
+	line-height: 30px;
+	text-align: left;
+}
+
+li::marker {
+	color: #F6C143;
+}
+
+
+
+
+/**定义一个名字为righteaseinAnimate动画，实现从页面的右边淡入页面效果*/
+@keyframes righteaseinAnimate{
+	0%{ transform: translateX(2000px); opacity: 0;}   /*在0%时设置文字在想X轴2000px位移处（右边），透明度为0，也就是看不见文字*/
+	100%{ transform: translateX(0px); opacity: 1;}      /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}

@@ -1,0 +1,141 @@
+
+
+body{
+    background-color: #4432c4;
+    overflow-x:hidden;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    float: left;
+    list-style: none;
+}
+
+
+.current{
+    color: rgb(255, 101, 55);
+}
+
+.middle{
+    text-align: center;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-right: auto;
+}
+
+.middle h2{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: #fff;
+}
+.tu{
+    margin-top: 60px;
+    margin-left:auto;
+    margin-right: auto;
+    height: 400px;
+    width:1200px;
+}
+.tu img {
+    width: 300px;
+    height: 365px;
+}
+.tab-hd{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 100px;
+    width: 370px;
+}
+.tu li{
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+    position: relative;
+}
+.tu   img{
+    transition: all .4s;
+    /*过渡时间*/
+}
+.tu img:hover{
+    transform: scale(1.1);
+    /*动画效果，元素缩放，默认值*/
+}
+.tu p{
+    position: absolute;
+    bottom: -14px;
+    left: -13px;
+    display: block;
+    width: 325px;
+    height: 50px;
+    background-color: #fff;
+    display: none;
+    /*为了让这行字不点击的时候能隐藏*/
+}
+
+.tab-hd li{
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    /*向 div 元素添加圆角边框：*/
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    /*让字体居中*/
+    /*margin-right: 60px;*/
+    margin-right: auto;
+    margin-left: auto;
+    color: #ffac00;
+    /*字体颜色*/
+    cursor: pointer;
+    /*光标呈现为指示链接的指针*/
+}
+
+.tab-hd li:hover{
+    background-color: #ffac00;
+    color: #fff;
+    /*点击动画*/
+}
+.tab-hd .c{
+    background-color: #ffac00;
+    color: #fff;
+}
+
+.tab-bd{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+    height: 960px;
+    margin-top: 10px;
+}
+.item{
+    display: none;
+}
+
+
+.move{
+    animation-name: move;
+    /*规定需要绑定到选择器的 keyframe 的名称*/
+    animation-duration: 1s;
+}
+@keyframes move{
+    0%{
+        transform: translate(500px,0px);
+    }
+
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+.goback{
+    position: absolute;
+    top: 1800px;
+    right: 60px;
+}
+/*animation-name单独属性，作用是指定要绑定到选择器的关键帧(即为@keyframes 动画指定一个名称)的名称
+animation-duration，定义动画完成一个周期需要多少秒(s)或毫秒(ms)，即动画播放完成花费时间。
+animation-timing-function:设置动画,从开始到结束以相同的速度播放动画*/
